@@ -57,8 +57,8 @@ footer a:hover {
 }
 
 .btn {
-    background: #5fb49cff;
-    color: #414288ff;
+    background: #414288ff;
+    color: #deefb7ff;
     text-decoration: none;
 }
 
@@ -77,7 +77,30 @@ footer a:hover {
     height: 375px;
 }
 
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #deefb7ff;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
 /* Profile */
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
 
 /* Projects */
 
