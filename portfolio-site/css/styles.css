@@ -32,10 +32,18 @@ body {
 .home {
     background: url(../images/bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .content-wrapper {
+    
+    flex: 1 0 auto; 
+}
+
+.content-bg {
     background: rgb(255 255 255 / 0.9);
+    padding: 30px;
 }
 
 /* Links */
@@ -105,6 +113,11 @@ footer a:hover {
 /* Projects */
 
 /* Work Experience */
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
 
 /* Education */
 
@@ -112,6 +125,9 @@ footer a:hover {
 footer {
     background: #222;
     color: #deefb7ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .socials {
@@ -121,8 +137,13 @@ footer {
 
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .socials img {
     width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
 }
