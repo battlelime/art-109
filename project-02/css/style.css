@@ -1,11 +1,45 @@
-/* Hiding Audio Elements */
+/* FONT */
+@font-face {
+    font-family: "ChillerCustom";
+    src: url("../font/CHILLER.TTF") format("truetype");
+}
+
+/* HIDING AUDIO ELEMENTS */
 
 audio {
     display: none;
 }
 
-/* BODY STYLES */
-body {
-    background-color: black;
+/* PAGE COUNTER */
+.page-counter {
     color: white;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    font-size: 3em;
+}
+
+/* PAGES STYLES */
+html, body {
+    background-color: black;
+    color: red;
+    height: 100%;
+    font-family: "ChillerCustom", sans-serif; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    flex: 1; 
+}
+
+/* HIDDEN BUTTONS */
+.hidden-button {
+    color: transparent; 
+    text-decoration: none;
+    transition: color 0.3s ease;  
+}
+.hidden-button:hover {
+    color: white; 
 }
