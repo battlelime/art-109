@@ -1,0 +1,11 @@
+/* Hiding Audio Elements */
+
+audio {
+    display: none;
+}
+
+/* BODY STYLES */
+body {
+    background-color: black;
+    color: white;
+}
