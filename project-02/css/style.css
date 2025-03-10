@@ -89,6 +89,16 @@ body {
     opacity: 1;
 }
 
+/* LAST PAGE */
+.final-door {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 25%;
+    height: auto;
+}
+
 /* HIDDEN BUTTONS */
 .hidden-button {
     color: transparent;

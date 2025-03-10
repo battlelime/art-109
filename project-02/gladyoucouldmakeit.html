@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- AUDIO AND TRACKER -->
+    <header>
+        <!-- AUDIO ELEMENT -->
+        <!-- "autoplay" is OFF for debugging purposes -->
+        <audio id="music" controls>
+            <source src="audio/themeoflaura.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p class="page-counter">pAGES: 3/3</p>
+        <!-- debugging forward and back links -->
+        <!-- <a href="page-02.html">page2</a>
+        <a href="page-04.html">page4</a>
+        -->
+    </header>
+
+    <!-- MAIN -->
+    <div class="main-content">
+        <img class="final-door" src="images/door.png" alt="Image of a door">
+        <img class="hidden-img final-door" src="images/openeddoor.png" id="openeddoor"
+            alt="Image of door has been opened">
+        <script>
+            document.getElementById("openeddoor").addEventListener("click", function () {
+                var audio = document.getElementById("music");
+                audio.play();
+            });
+        </script>
+    </div>
+
+    <!-- FOOTER (TIPS SECTIONS) -->
+    <footer>
+        TIPS: congrats for beat my short html game, leeme knwo fi were scared... LOL. 
+        <p style="margin: 0;">CREDITS: SILENT HILL 2 SOUNDS EFFECTS WERE USED. P.T AUDIO FILES WERE USED. RIGHTS AND OWNED BY KONAMI</p>
+    </footer>
+
+</body>
+
+</html>
