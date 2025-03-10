@@ -21,25 +21,81 @@ audio {
 }
 
 /* PAGES STYLES */
-html, body {
+html,
+body {
     background-color: black;
     color: red;
     height: 100%;
-    font-family: "ChillerCustom", sans-serif; 
-    margin: 0; 
+    font-family: "ChillerCustom", sans-serif;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
+
+.first {
+    background-image: url('../images/main-bg.gif');
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.second {
+    background-image: url('../images/eye-dark-eye.gif');
+    background-size: 75px 75px;
+}
+
 .main-content {
-    flex: 1; 
+    flex: 1;
+}
+
+/* SECOND PAGE MECHANICS */
+.main-one {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+/* THIRD PAGE */
+.random-place {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+}
+
+.hidden-img {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.hidden-img:hover {
+    opacity: 1;
+}
+
+/* JUMP SCARE */
+.pop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
 }
 
 /* HIDDEN BUTTONS */
 .hidden-button {
-    color: transparent; 
+    color: transparent;
     text-decoration: none;
-    transition: color 0.3s ease;  
+    transition: color 0.3s ease;
 }
+
 .hidden-button:hover {
-    color: white; 
+    color: white;
 }

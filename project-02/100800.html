@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOO!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- AUDIO AND TRACKER -->
+    <header>
+        <!-- AUDIO ELEMENT -->
+        <!-- "autoplay" is OFF for debugging purposes -->
+        <audio id="popupAudio" controls loop>
+            <source src="audio/scare.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p class="page-counter">PAGES: 2/3</p>
+        <!-- debugging forward and back links -->
+        <!-- <a href="ENTER-NUMBER.html">page1</a>
+        <a href="page-03.html">page3</a>
+        -->
+    </header>
+
+    <!-- MAIN -->
+    <div class="main-content">
+        <img src="images/eye-dark-eye.gif" class="random-place hidden-img" style="left: 1000px; top: 200px;">
+        <img src="images/eye-dark-eye.gif" class="random-place hidden-img" style="left: 300px; top: 400px;">
+        <img src="images/eye-dark-eye.gif" class="random-place hidden-img" style="left: 600px; top: 80px;">
+        <img src="images/eye-dark-eye.gif" class="random-place hidden-img" style="left: 900px; top: 500px;">
+        <img src="images/eye-dark-eye.gif" class="random-place hidden-img" style="left: 150px; top: 600px;">
+        <img src="images/eye-dark-eye.gif" class="random-place hidden-img" style="left: 50px; top: 350px;">
+
+        <a href="page-03.html"><img src="images/scary-face.gif" class="pop" id="popupImage"></a>
+        <script>
+            // Function to make the image appear after 30 seconds
+            setTimeout(function () {
+                var image = document.getElementById("popupImage");
+                var audio = document.getElementById("popupAudio");
+
+                image.classList.add("visible"); 
+
+                audio.play();
+            }, 30000);
+        </script>
+    </div>
+
+    <!-- FOOTER (TIPS SECTIONS) -->
+    <footer>
+        TIPS:
+    </footer>
+
+</body>
+
+</html>
