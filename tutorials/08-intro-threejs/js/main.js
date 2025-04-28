@@ -1,4 +1,5 @@
 let scene, camera, renderer, cube;
+let sceneContainer = document.querySelector("#scene-container");
 
 // Basic Three.JS scene from documentation, importing Three.JS through a CDN 
 // https://threejs.org/docs/#manual/en/introduction/Creating-a-scene
@@ -29,7 +30,7 @@ function inti() {
     const helperR = new THREE.DirectionalLightHelper(lightR, 5);
     scene.add(helperR)
 
-    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     const container = document.getElementById('three-container');
     container.appendChild(renderer.domElement);
@@ -37,7 +38,7 @@ function inti() {
 
 
     // ~~~~~~~~~~~~~~~~ Initiate add-ons ~~~~~~~~~~~~~~~~
-    const controls = new OrbitControls(camera, renderer.domElement);
+    //const controls = new OrbitControls(camera, renderer.domElement);
     const loader = new GLTFLoader(); // to load 3d models
 
     loader.load('assets/dog_shiny.gltf', function (gltf) {
