@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>almost</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="first">
+    <!-- AUDIO AND TRACKER -->
+    <header>
+        <!-- AUDIO ELEMENT -->
+        <!-- "autoplay" is OFF for debugging purposes -->
+        <audio id="maze-sound" src="audio/screamtowalk.m4a" preload="auto"></audio>
+
+        <p class="key-counter">KEYS COLLECTED: 1/3</p>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="maze-container">
+            <canvas id="maze-canvas" style="display:none;"></canvas>
+            <img id="maze" src="images/maze1k.png" alt="Maze" class="maze-image">
+
+            <a href="maze2.html">
+                <img class="key" src="images/key.png" alt="key" style="top: 35%; left: 31%;">
+            </a>
+        </div>
+
+        <img id="popup" src="images/scary-face.gif" alt="Popup">
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/* FONT */
+@font-face {
+    font-family: "ChillerCustom";
+    src: url("../font/CHILLER.TTF") format("truetype");
+}
+
+/* HIDING AUDIO ELEMENTS */
+
+audio {
+    display: none;
+}
+
+/* PAGE COUNTER */
+.key-counter {
+    color: red;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    font-size: 3em;
+}
+
+/* PAGES STYLES */
+html,
+body {
+    background-color: white;
+    color: red;
+    font-family: "ChillerCustom", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* MAZE IMAGE CENTERING */
+.maze-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.maze-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Key */
+.key {
+    position: absolute;
+    width: 4%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 999;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.eyeball {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 5vw;
+    max-height: 5vh;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
